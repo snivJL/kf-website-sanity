@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Kf Website V2',
+  title: 'Kf Website Sanity',
 
   projectId: '7gk1pdfh',
   dataset: 'production',
