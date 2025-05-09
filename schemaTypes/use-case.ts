@@ -29,7 +29,7 @@ export default defineType({
       type: 'array',
       of: [{type: 'useCaseItem'}],
       description: 'This section shows 3 use case cards with identical structure.',
-      validation: (Rule) => Rule.required().length(3),
+      validation: (Rule) => Rule.required().max(3),
     }),
   ],
 })
