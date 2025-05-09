@@ -1,0 +1,5 @@
+{
+  "path": "../kf-website-frontend/**/*.{ts,tsx,js,jsx}",
+  "schema": "./schema.json",
+  "generates": "../kf-website-frontend/lib/sanity/types.ts"
+}
