@@ -1795,7 +1795,7 @@
         },
         "optional": true
       },
-      "useCase": {
+      "useCases": {
         "type": "objectAttribute",
         "value": {
           "type": "array",

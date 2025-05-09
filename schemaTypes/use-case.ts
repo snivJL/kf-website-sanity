@@ -24,8 +24,8 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'useCase',
-      title: 'Use Case',
+      name: 'useCases',
+      title: 'Use Cases',
       type: 'array',
       of: [{type: 'useCaseItem'}],
       description: 'This section shows 3 use case cards with identical structure.',
