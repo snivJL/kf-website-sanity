@@ -20,6 +20,13 @@ export default defineType({
     defineField({
       name: 'description',
       title: 'Description',
+      type: 'array',
+      of: [{type: 'block'}],
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'blueSection',
+      title: 'The section with a blue text',
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
