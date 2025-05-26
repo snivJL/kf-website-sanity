@@ -2223,6 +2223,20 @@
         },
         "optional": true
       },
+      "graySubHeading": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "blueSubHeading": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
       "cards": {
         "type": "objectAttribute",
         "value": {

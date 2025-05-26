@@ -12,6 +12,18 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'graySubHeading',
+      title: 'Gray Subheading',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'blueSubHeading',
+      title: 'Blue Subheading',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'cards',
       title: 'Cards',
       type: 'array',
