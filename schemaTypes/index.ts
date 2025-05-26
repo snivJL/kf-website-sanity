@@ -8,6 +8,7 @@ import ourApproach from './our-approach'
 import whatWeDo from './what-we-do'
 import useCase from './use-case'
 import {useCaseItem} from './objects/use-case-item'
+import {cta} from './objects/cta'
 
 export const schemaTypes = [
   home,
@@ -20,4 +21,5 @@ export const schemaTypes = [
   stepItem,
   faqItem,
   useCaseItem,
+  cta,
 ]

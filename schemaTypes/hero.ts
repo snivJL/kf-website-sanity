@@ -40,5 +40,11 @@ export default defineType({
         },
       ],
     }),
+    defineField({
+      name: 'ctas',
+      title: 'Call to Action Phrases',
+      type: 'array',
+      of: [{type: 'cta'}],
+    }),
   ],
 })
