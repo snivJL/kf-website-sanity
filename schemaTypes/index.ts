@@ -9,6 +9,7 @@ import whatWeDo from './what-we-do'
 import useCase from './use-case'
 import {useCaseItem} from './objects/use-case-item'
 import {cta} from './objects/cta'
+import contactUs from './contact-us'
 
 export const schemaTypes = [
   home,
@@ -17,6 +18,7 @@ export const schemaTypes = [
   ourApproach,
   faq,
   useCase,
+  contactUs,
   whatWeDoItem,
   stepItem,
   faqItem,
