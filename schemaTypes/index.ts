@@ -12,6 +12,8 @@ import {cta} from './objects/cta'
 import contactUs from './contact-us'
 import highlights from './highlights'
 import {highlightItem} from './objects/highlight-item'
+import howWeWork from './how-we-work'
+import {howWeWorkItem} from './objects/how-we-work-item'
 
 export const schemaTypes = [
   home,
@@ -21,6 +23,8 @@ export const schemaTypes = [
   faq,
   useCase,
   contactUs,
+  howWeWork,
+  howWeWorkItem,
   highlights,
   whatWeDoItem,
   stepItem,
