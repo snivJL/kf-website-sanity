@@ -24,6 +24,19 @@ const highlights = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'shortText',
+      title: 'Short Text',
+      type: 'string',
+      description: 'This text will be displayed above the video',
+    }),
+    defineField({name: 'testimonial', title: 'Testimonial', type: 'array', of: [{type: 'block'}]}),
+    defineField({
+      name: 'tagline',
+      title: 'Tagline',
+      type: 'string',
+      description: 'This blue text will be displayed below the video',
+    }),
+    defineField({
       name: 'items',
       title: 'Highlight Items',
       type: 'array',

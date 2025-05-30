@@ -17,34 +17,27 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'image',
-      title: 'Hero Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative text',
-          description: 'Important for SEO and accessibility.',
-          validation: (rule) => {
-            return rule.custom((alt, context) => {
-              if ((context.document?.image as any)?.asset?._ref && !alt) {
-                return 'Required'
-              }
-              return true
-            })
-          },
-        },
-      ],
-    }),
-    defineField({
       name: 'ctas',
       title: 'Call to Action Phrases',
       type: 'array',
       of: [{type: 'cta'}],
+      validation: (rule) => rule.required().length(3),
+      description: 'This section shows 3 boxes with identical structure.',
+    }),
+    defineField({
+      name: 'quoteText',
+      title: 'Quote Text',
+      type: 'string',
+      validation: (rule) => rule.required(),
+      initialValue:
+        '“Every industry will be redefined by AI. If you’re not thinking about how to apply it, you’re already behind.”',
+    }),
+    defineField({
+      name: 'quoteAuthor',
+      title: 'Quote Author',
+      type: 'string',
+      initialValue: 'Sundar Pichai, CEO of Google.',
+      validation: (rule) => rule.required(),
     }),
   ],
 })
