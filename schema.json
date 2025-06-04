@@ -437,6 +437,13 @@
           },
           "optional": true
         },
+        "company": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
         "hook": {
           "type": "objectAttribute",
           "value": {
