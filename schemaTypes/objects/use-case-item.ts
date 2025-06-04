@@ -50,7 +50,7 @@ export const useCaseItem = defineType({
     }),
     defineField({
       name: 'solution',
-      title: 'SoLution',
+      title: 'Solution',
       type: 'array',
       of: [{type: 'block'}],
       validation: (Rule) => Rule.required(),
@@ -65,6 +65,13 @@ export const useCaseItem = defineType({
     defineField({
       name: 'korefocusRole',
       title: 'Korefocus Role',
+      type: 'array',
+      of: [{type: 'block'}],
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'testimonial',
+      title: 'Testimonial',
       type: 'array',
       of: [{type: 'block'}],
       validation: (Rule) => Rule.required(),
