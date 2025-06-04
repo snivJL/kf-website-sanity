@@ -9,6 +9,15 @@ export const useCaseItem = defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      initialValue: 'What we did for',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'company',
+      title: 'Company',
+      type: 'string',
+      description:
+        'Name of short description of the company or organization the use case is related to. Appears in blue',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -74,7 +83,6 @@ export const useCaseItem = defineType({
       title: 'Testimonial',
       type: 'array',
       of: [{type: 'block'}],
-      validation: (Rule) => Rule.required(),
     }),
   ],
 })
