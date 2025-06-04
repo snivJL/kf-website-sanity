@@ -1360,6 +1360,27 @@
           },
           "optional": true
         },
+        "shortTestimonial": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "shortTestimonialAuthor": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "shortTestimonialCompany": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
         "testimonial": {
           "type": "objectAttribute",
           "value": {
