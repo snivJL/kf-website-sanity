@@ -79,6 +79,21 @@ export const useCaseItem = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'shortTestimonial',
+      title: 'Short Testimonial',
+      type: 'text',
+    }),
+    defineField({
+      name: 'shortTestimonialAuthor',
+      title: 'Short Testimonial Author',
+      type: 'text',
+    }),
+    defineField({
+      name: 'shortTestimonialCompany',
+      title: 'Short Testimonial Company',
+      type: 'text',
+    }),
+    defineField({
       name: 'testimonial',
       title: 'Testimonial',
       type: 'array',
